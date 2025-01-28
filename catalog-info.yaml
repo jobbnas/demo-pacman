@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-pacman
+  description: A pacman service!
+  tags:
+  - backend
+  - service
+  annotations:
+    argocd-url: https://openshift-gitops-server-openshift-gitops.apps.rosa-rm7ns.gkef.p1.openshiftapps.com/applications/pacman
+spec:
+  type: service
+  owner: jonas-team
+  lifecycle: production
