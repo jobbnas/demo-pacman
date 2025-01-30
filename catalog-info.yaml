@@ -9,6 +9,7 @@ metadata:
   annotations:
     argocd-url: https://openshift-gitops-server-openshift-gitops.apps.rosa-rm7ns.gkef.p1.openshiftapps.com/applications/pacman
     argocd/app-selector: 'default-gitops=pacman'
+    jenkins.io/job-full-name: default-jenkins:pacman/pacman-pipeline
 spec:
   type: service
   owner: jonas-team
