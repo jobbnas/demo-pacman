@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     name: pacman
+    backstage.io/kubernetes-id: pacman-demo
   name: pacman
 spec:
   replicas: 1

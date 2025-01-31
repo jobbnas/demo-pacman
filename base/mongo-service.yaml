@@ -3,11 +3,12 @@ kind: Service
 metadata:
   labels:
     name: mongo
+    backstage.io/kubernetes-id: pacman-demo
   name: mongo
 spec:
   type: ClusterIP
   ports:
-    - port: 27017
-      targetPort: 27017
+  - port: 27017
+    targetPort: 27017
   selector:
     name: mongo

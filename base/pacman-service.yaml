@@ -4,11 +4,12 @@ metadata:
   name: pacman
   labels:
     name: pacman
+    backstage.io/kubernetes-id: pacman-demo
 spec:
   type: ClusterIP
   ports:
-    - port: 80
-      targetPort: 8080
-      protocol: TCP
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
   selector:
     name: pacman
