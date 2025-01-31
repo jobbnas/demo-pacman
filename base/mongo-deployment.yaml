@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         name: mongo
+        backstage.io/kubernetes-id: pacman-demo
     spec:
       containers:
       - image: bitnami/mongodb:latest

@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         name: pacman
+        backstage.io/kubernetes-id: pacman-demo
     spec:
       containers:
       - image: quay.io/dbewley/pacman:latest
