@@ -4,6 +4,8 @@ metadata:
   labels:
     name: pacman
     backstage.io/kubernetes-id: pacman-demo
+    app.kubernetes.io/part-of: pacman
+    app.openshift.io/runtime: nodejs
   name: pacman
 spec:
   replicas: 1

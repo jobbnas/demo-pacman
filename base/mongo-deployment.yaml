@@ -4,6 +4,8 @@ metadata:
   labels:
     name: mongo
     backstage.io/kubernetes-id: pacman-demo
+    app.kubernetes.io/part-of: pacman
+    app.kubernetes.io/name: mongo
   name: mongo
 spec:
   replicas: 1
@@ -15,6 +17,8 @@ spec:
       labels:
         name: mongo
         backstage.io/kubernetes-id: pacman-demo
+        app.kubernetes.io/part-of: pacman
+        app.kubernetes.io/name: mongo
     spec:
       containers:
       - image: bitnami/mongodb:latest
