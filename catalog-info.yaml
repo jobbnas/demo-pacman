@@ -10,6 +10,7 @@ metadata:
     argocd-url: https://openshift-gitops-server-openshift-gitops.apps.rosa-rm7ns.gkef.p1.openshiftapps.com/applications/pacman
     argocd/app-selector: 'default-gitops=pacman'
     jenkins.io/job-full-name: pacman/pacman-pacman-pipeline
+    backstage.io/kubernetes-id: pacman-demo
     backstage.io/kubernetes-namespace: pacman
 spec:
   type: service
