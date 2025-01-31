@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     name: mongo
+    backstage.io/kubernetes-id: pacman-demo
   name: mongo
 spec:
   replicas: 1
@@ -21,9 +22,9 @@ spec:
         - name: mongo
           containerPort: 27017
         volumeMounts:
-          - name: mongo-db
-            mountPath: /data/db
-      volumes:
         - name: mongo-db
-          persistentVolumeClaim:
-            claimName: mongo-storage
+          mountPath: /data/db
+      volumes:
+      - name: mongo-db
+        persistentVolumeClaim:
+          claimName: mongo-storage
